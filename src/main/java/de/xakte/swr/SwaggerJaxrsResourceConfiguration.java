@@ -1,5 +1,6 @@
 package de.xakte.swr;
 
+import de.xakte.swr.boundary.PersonResource;
 import de.xakte.swr.boundary.PingResource;
 
 import javax.ws.rs.ApplicationPath;
@@ -22,5 +23,6 @@ public class SwaggerJaxrsResourceConfiguration extends Application {
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(PingResource.class);
+        resources.add(PersonResource.class);
     }
 }
